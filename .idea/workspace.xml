@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcef5519-7ce7-43f8-917c-4644c83ab676" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/design_pattern/FactoryMethod.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/decorator.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/decorator02.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/decorator_log.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/proxy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/simple_factory.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/simple_factory_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design_pattern/strategy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/texas/texas.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/texas/Compare.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/texas/match.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/texas/texas_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/texas/texas.go" beforeDir="false" afterPath="$PROJECT_DIR$/texas/texas.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,36 +54,52 @@
     <session id="1473150181">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="12" />
+          <entry key="go" value="25" />
+          <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="11" />
+          <entry key="Go" value="24" />
+          <entry key="JSON" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="6" />
-          <entry key="go" value="3899" />
+          <entry key="dummy" value="8" />
+          <entry key="go" value="8092" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="3899" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Go" value="8092" />
+          <entry key="PLAIN_TEXT" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.go.postfix.template.usages.trigger">
+        <counts>
+          <entry key=".len" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -95,70 +107,79 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design_pattern/proxy.go">
+        <entry file="file://$PROJECT_DIR$/texas/texas.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+            <state relative-caret-position="-11">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/design_pattern/simple_factory_test.go">
+        <entry file="file://$PROJECT_DIR$/texas/Compare.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="72" column="13" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="22" />
+            <state relative-caret-position="260">
+              <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="9" />
               <folding>
-                <element signature="e#24#52#0" expanded="true" />
+                <element signature="e#14#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design_pattern/FactoryMethod.go">
+        <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="23" lean-forward="true" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+            <state relative-caret-position="45">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/net/http/request.go">
+        <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/io/ioutil/ioutil.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18690">
-              <caret line="1267" column="18" selection-start-line="1267" selection-start-column="18" selection-end-line="1267" selection-end-column="18" />
+            <state relative-caret-position="152">
+              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/time/time.go">
+        <entry file="file://$PROJECT_DIR$/texas/match.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
-              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/program/calculator.go">
+        <entry file="file://$PROJECT_DIR$/texas/texas_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
               <folding>
-                <element signature="e#17#42#0" expanded="true" />
+                <element signature="e#15#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/sort_interface.go">
+        <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="1335">
+              <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings_amd64.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -189,9 +210,7 @@
         <option value="$PROJECT_DIR$/test/program_test.go" />
         <option value="$PROJECT_DIR$/struct/error.go" />
         <option value="$PROJECT_DIR$/algorithm/bubble.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/file/file_operation.go" />
-        <option value="$PROJECT_DIR$/texas/texas.go" />
         <option value="$PROJECT_DIR$/design_pattern/simple_factory.go" />
         <option value="$PROJECT_DIR$/design_pattern/strategy.go" />
         <option value="$PROJECT_DIR$/design_pattern/decorator_log.go" />
@@ -200,6 +219,11 @@
         <option value="$PROJECT_DIR$/design_pattern/proxy.go" />
         <option value="$PROJECT_DIR$/design_pattern/FactoryMethod.go" />
         <option value="$PROJECT_DIR$/design_pattern/simple_factory_test.go" />
+        <option value="$PROJECT_DIR$/texas/texas.go" />
+        <option value="$PROJECT_DIR$/texas/texas_test.go" />
+        <option value="$PROJECT_DIR$/texas/match.json" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/texas/Compare.go" />
       </list>
     </option>
   </component>
@@ -209,10 +233,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="725" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -232,12 +256,27 @@
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="gostudy" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gostudy" type="462c0819:PsiDirectoryNode" />
               <item name="design_pattern" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="gostudy" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gostudy" type="462c0819:PsiDirectoryNode" />
+              <item name="program" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gostudy" type="462c0819:PsiDirectoryNode" />
+              <item name="struct" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
@@ -264,7 +303,22 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="ioutil" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="path" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,13 +335,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/texas" />
+      <recent name="$PROJECT_DIR$/design_pattern" />
+      <recent name="$PROJECT_DIR$/interface" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/program" />
       <recent name="$PROJECT_DIR$/struct_another" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/design_pattern" />
-      <recent name="$PROJECT_DIR$/interface" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -302,16 +357,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestFactoryMethoh in gostudy/design_pattern">
-    <configuration name="TestDecorator in gostudy/design_pattern" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build Compare.go">
+    <configuration name="go build Compare.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="konggostudy" />
-      <working_directory value="$PROJECT_DIR$/design_pattern" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="gostudy/design_pattern" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/texas/Compare.go" />
+      <package value="gostudy" />
       <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestDecorator$" />
       <method v="2" />
     </configuration>
     <configuration name="TestDecorator2 in gostudy/design_pattern" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -323,17 +376,6 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <pattern value="^TestDecorator2$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestDecoratorLog in gostudy/design_pattern" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="konggostudy" />
-      <working_directory value="$PROJECT_DIR$/design_pattern" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="gostudy/design_pattern" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestDecoratorLog$" />
       <method v="2" />
     </configuration>
     <configuration name="TestFactoryMethoh in gostudy/design_pattern" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -358,72 +400,82 @@
       <pattern value="^TestProxy$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestSort in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="konggostudy" />
+      <working_directory value="$PROJECT_DIR$/texas" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="gostudy/texas" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestSort$" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Go Test.TestDecorator in gostudy/design_pattern" />
-      <item itemvalue="Go Test.TestDecoratorLog in gostudy/design_pattern" />
       <item itemvalue="Go Test.TestDecorator2 in gostudy/design_pattern" />
       <item itemvalue="Go Test.TestProxy in gostudy/design_pattern" />
       <item itemvalue="Go Test.TestFactoryMethoh in gostudy/design_pattern" />
+      <item itemvalue="Go Test.TestSort in gostudy/texas" />
+      <item itemvalue="Go Build.go build Compare.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build Compare.go" />
+        <item itemvalue="Go Test.TestSort in gostudy/texas" />
         <item itemvalue="Go Test.TestFactoryMethoh in gostudy/design_pattern" />
         <item itemvalue="Go Test.TestProxy in gostudy/design_pattern" />
         <item itemvalue="Go Test.TestDecorator2 in gostudy/design_pattern" />
-        <item itemvalue="Go Test.TestDecorator in gostudy/design_pattern" />
-        <item itemvalue="Go Test.TestDecoratorLog in gostudy/design_pattern" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDecorator2_in_gostudy_design_pattern - 2018.11.11 at 16h 03m 23s.xml">
-      <configuration name="TestDecorator2 in gostudy/design_pattern" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestSort_in_gostudy_texas - 2018.12.08 at 12h 20m 36s.xml">
+      <configuration name="TestSort in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecorator2_in_gostudy_design_pattern - 2018.11.11 at 16h 03m 42s.xml">
-      <configuration name="TestDecorator2 in gostudy/design_pattern" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestSort_in_gostudy_texas - 2018.12.08 at 12h 22m 27s.xml">
+      <configuration name="TestSort in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecorator2_in_gostudy_design_pattern - 2018.11.11 at 16h 04m 52s.xml">
-      <configuration name="TestDecorator2 in gostudy/design_pattern" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestSort_in_gostudy_texas - 2018.12.08 at 12h 24m 26s.xml">
+      <configuration name="TestSort in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecorator2_in_gostudy_design_pattern - 2018.11.11 at 16h 05m 35s.xml">
-      <configuration name="TestDecorator2 in gostudy/design_pattern" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestSort_in_gostudy_texas - 2018.12.08 at 12h 25m 01s.xml">
+      <configuration name="TestSort in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecorator2_in_gostudy_design_pattern - 2018.11.11 at 16h 06m 32s.xml">
-      <configuration name="TestDecorator2 in gostudy/design_pattern" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestSort_in_gostudy_texas - 2018.12.08 at 12h 26m 06s.xml">
+      <configuration name="TestSort in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecorator2_in_gostudy_design_pattern - 2018.11.11 at 16h 41m 39s.xml">
-      <configuration name="TestDecorator2 in gostudy/design_pattern" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestSort_in_gostudy_texas - 2018.12.08 at 12h 26m 29s.xml">
+      <configuration name="TestSort in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecorator2_in_gostudy_design_pattern - 2018.11.11 at 16h 42m 11s.xml">
-      <configuration name="TestDecorator2 in gostudy/design_pattern" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestSort_in_gostudy_texas - 2018.12.08 at 12h 31m 53s.xml">
+      <configuration name="TestSort in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestProxy_in_gostudy_design_pattern - 2018.11.11 at 17h 29m 45s.xml">
-      <configuration name="TestProxy in gostudy/design_pattern" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestSort_in_gostudy_texas - 2018.12.08 at 13h 17m 49s.xml">
+      <configuration name="TestSort in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestProxy_in_gostudy_design_pattern - 2018.11.11 at 17h 30m 26s.xml">
-      <configuration name="TestProxy in gostudy/design_pattern" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestSort_in_gostudy_texas - 2018.12.08 at 13h 27m 05s.xml">
+      <configuration name="TestSort in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestFactoryMethoh_in_gostudy_design_pattern - 2018.11.11 at 17h 57m 26s.xml">
-      <configuration name="TestFactoryMethoh in gostudy/design_pattern" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestSort_in_gostudy_texas - 2018.12.09 at 11h 28m 24s.xml">
+      <configuration name="TestSort in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4958904" visible="true" weight="0.30533117" />
-      <window_info id="Structure" order="1" sideWeight="0.50410956" side_tool="true" visible="true" weight="0.30533117" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47928995" visible="true" weight="0.15993538" />
+      <window_info id="Structure" order="1" sideWeight="0.52071005" side_tool="true" weight="0.15993538" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30547947" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -447,13 +499,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../gopl.io/ch7/eval/parse.go" />
-    <entry file="file://$PROJECT_DIR$/struct/struct_lap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/struct_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -496,20 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/bubble.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/os/file.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3765">
@@ -525,13 +556,6 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.go" />
-    <entry file="file://$PROJECT_DIR$/texas/texas.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/os/path.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -567,13 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design_pattern/decorator.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/design_pattern/decorator_log.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -588,30 +605,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/design_pattern/decorator.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design_pattern/simple_factory_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="72" column="13" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/design_pattern/proxy.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
+        <state relative-caret-position="290">
           <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design_pattern/FactoryMethod.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
+        <state relative-caret-position="410">
           <caret line="56" column="23" lean-forward="true" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/net/http/request.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18690">
+        <state relative-caret-position="410">
           <caret line="1267" column="18" selection-start-line="1267" selection-start-column="18" selection-end-line="1267" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/time/time.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
+        <state relative-caret-position="410">
           <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
         </state>
       </provider>
@@ -620,9 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="e#17#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -633,12 +661,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design_pattern/simple_factory_test.go">
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strconv/itoa.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="72" column="13" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="22" />
+        <state relative-caret-position="144">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings_amd64.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texas/texas.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texas/match.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texas/texas_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
           <folding>
-            <element signature="e#24#52#0" expanded="true" />
+            <element signature="e#15#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/io/ioutil/ioutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/bubble.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/struct/struct_lap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/path/path.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="180" column="5" selection-start-line="180" selection-start-column="5" selection-end-line="180" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texas/Compare.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <element signature="e#14#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
