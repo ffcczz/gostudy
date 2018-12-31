@@ -38,7 +38,7 @@ func TestCard_SameCardMaxLen(t *testing.T) {
 
 }
 
-func TestCompare(t *testing.T) {
+func TestCompareFiveCard(t *testing.T) {
 	//currentPath,_ := filepath.Abs(filepath.Dir(os.Args[0]))
 	//fmt.Println(currentPath)
 	var matches FiveCards
@@ -107,4 +107,77 @@ func TestCompareSevenCard(t *testing.T) {
 		}
 	}
 	//fmt.Println(matches)
+}
+
+func TestCompareFiveCardWithGhost(t *testing.T)  {
+	var matches FiveCards
+	var results FiveCards
+	ReadFile("five_cards_with_ghost.json", &matches)
+	start := time.Now().UTC().Nanosecond()
+	for i := 0; i< len(matches.Matches); i++ {
+		cardBob := CardFiveGhost{
+			Card:Card{
+				CurrentCard:matches.Matches[i].Bob,
+			},
+		}
+		cardAlice := CardFiveGhost{
+			Card:Card{
+				CurrentCard:matches.Matches[i].Alice,
+			},
+		}
+		cardBob.SortCurrentCard()
+		cardBob.CheckCardLevel()
+		cardAlice.SortCurrentCard()
+		cardAlice.CheckCardLevel()
+		matches.Matches[i].Result = CompareCard(&cardAlice.Card,&cardBob.Card)
+	}
+	end := time.Now().UTC().Nanosecond()
+	fmt.Println(end-start)
+	ReadFile("five_cards_with_ghost.result.json", &results)
+	count := 0
+	for i:=0; i < len(matches.Matches); i++ {
+		if matches.Matches[i].Result != results.Matches[i].Result {
+			count += 1
+			fmt.Println(i,"result error", matches.Matches[i],results.Matches[i], count)
+		}
+	}
+}
+
+
+func TestCompareSevenCardWithGhost(t *testing.T)  {
+	var matches FiveCards
+	var results FiveCards
+	ReadFile("seven_cards_with_ghost.json", &matches)
+	start := time.Now().UTC().Nanosecond()
+	for i := 0; i< len(matches.Matches); i++ {
+		cardBob := CardSevenGhost{
+			CardSeven:CardSeven{
+				Card:Card{
+					CurrentCard:matches.Matches[i].Bob,
+				},
+			},
+		}
+		cardAlice := CardSevenGhost{
+			CardSeven:CardSeven{
+				Card:Card{
+					CurrentCard:matches.Matches[i].Alice,
+				},
+			},
+		}
+		cardBob.SortCurrentCard()
+		cardBob.CheckCardLevel()
+		cardAlice.SortCurrentCard()
+		cardAlice.CheckCardLevel()
+		matches.Matches[i].Result = CompareCard(&cardAlice.Card,&cardBob.Card)
+	}
+	end := time.Now().UTC().Nanosecond()
+	fmt.Println(end-start)
+	ReadFile("seven_cards_with_ghost.result.json", &results)
+	count := 0
+	for i:=0; i < len(matches.Matches); i++ {
+		if matches.Matches[i].Result != results.Matches[i].Result {
+			count += 1
+			fmt.Println(i,"result error", matches.Matches[i],results.Matches[i], count)
+		}
+	}
 }
