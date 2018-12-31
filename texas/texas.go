@@ -5,19 +5,20 @@ import (
 )
 
 const (
-	LevelFirst = 100
-	LevelSecond = 99
-	LevelThird = 98
-	LevelFourth = 97
-	LevelFifth = 96  //同花
-	LevelSixth = 95
-	LevelSeventh = 94   //三条
-	LevelEighth = 93
-	LevelNinth = 92
-	LevelTenth = 91
-	ResultFirst = 1
-	ResultSecond = 2
-	ResultDogFall = 0
+	LevelRoyalFlush         = 100 //皇家同花顺
+	LevelStragStraightFlush = 99  //同花顺
+	LevelFourOfKind         = 98  //四条
+	LevelFullHouse          = 97  //葫芦
+	LevelFlush              = 96  //同花
+	LevelStraight           = 95  //顺子
+	LevelThreeOfKind        = 94  //三条
+	LevelTwoPairs           = 93  //两对
+	LevelOnePair            = 92  //一对
+	LevelOvercard           = 91  //单张最大
+	ResultFirst             = 1   //
+	ResultSecond            = 2
+	ResultDogFall           = 0
+    BaseCardLengh           = 5   //基本牌长
 )
 
 var FaceBase = "23456789TJQKA"
@@ -42,40 +43,42 @@ var FaceSortBaseMap = map[rune]rune{
 }
 
 
-type Card struct {
-	Level       int   // 此手牌所属等级   皇家同花顺 100  同花顺 99 以此类推
-	CurrentCard string
-	SortCard    string
-	SortCardFace string
-	SortCardColor string
-	MaxCardFace rune
-	SecondCardFace rune
+
+type Card struct {    //五张   基础
+	Level       int      // 此手牌所属等级   皇家同花顺 100  同花顺 99 以此类推
+	CurrentCard string   //初始牌
+	SortCard    string   //排序后的牌
+	SortCardFace string  //排序后的牌面
+	SortCardColor string //排序后的花色
+	MaxCardFace rune     //牌面相同最多张
+	SecondCardFace rune  //牌面相同第二多的张
 }
 
-type CardSeven struct {
+type CardSeven struct { //七张
 	Card
 }
 
-type CardFiveGhost struct {
+type CardFiveGhost struct {  //五张带癞子
 	Card
 }
 
-type CardSevenGhost struct {
+type CardSevenGhost struct {  //七张带癞子
 	CardSeven
 }
 
+
+// 将初始牌排序  并设置好 排序后的牌 牌面  和花色
 func (card *Card) SortCurrentCard()  {
 	currentCard := []rune(card.CurrentCard)
+	//冒泡排序
 	for i := 0; i < len(currentCard) -2 ; i+=2 {
 		for j:=0; j < len(currentCard) -i -2; j+=2 {
-			//ThAs9d5c9s
 			if FaceSortBaseMap[currentCard[j]] >= FaceSortBaseMap[currentCard[j+2]] {
-				//fmt.Println(FaceSortBaseMap[currentCard[j]] , currentCard[j])
-				//fmt.Println(FaceSortBaseMap[currentCard[j+2]], currentCard[j+2] )
 				currentCard[j],currentCard[j+1], currentCard[j+2],currentCard[j+3] = currentCard[j+2],currentCard[j+3] , currentCard[j],currentCard[j+1]
 			}
 		}
 	}
+	//设置好 排序后的牌
 	card.SortCard = string(currentCard)
 	var sortCardFace []rune
 	var sortCardColor []rune
@@ -83,11 +86,12 @@ func (card *Card) SortCurrentCard()  {
 		sortCardFace = append(sortCardFace, currentCard[i])
 		sortCardColor = append(sortCardColor, currentCard[i+1])
 	}
+	//设置好 排序后的牌面  和花色
 	card.SortCardFace = string(sortCardFace)
 	card.SortCardColor = string(sortCardColor)
 }
 
-
+// 判断所有牌是否为同一颜色(与五张带癞子一起用)
 func (card *Card) IsSortCardColorSame() bool  {
 	for i := 0; i < len(card.SortCardColor)-1; i++ {
 		if card.SortCardColor[i] == 'n' || card.SortCardColor[i+1] == 'n' {
@@ -100,8 +104,7 @@ func (card *Card) IsSortCardColorSame() bool  {
 	return true
 }
 
-const BaseCardLengh  = 5
-
+// 七张  判断是否为同一颜色  并修改排序后的牌面
 func (card *CardSeven)IsSortCardColorSame() bool  {
 	for _,svalue := range ColorBase {
 		n := strings.Count(card.SortCardColor,string(svalue))
@@ -109,9 +112,7 @@ func (card *CardSeven)IsSortCardColorSame() bool  {
 			var sortCardFace string
 			sortColor := card.SortCardColor
 			cardFace := card.SortCardFace
-			//for i := 0; i< BaseCardLengh; i++ {
 			for i := 0; i< n; i++ {
-				//6s7sQsQhKhKs5s
 				index := strings.Index(sortColor, string(svalue))
 				sortCardFace += cardFace[index:index+1]
 				sortColor = sortColor[index+1:]
@@ -124,11 +125,11 @@ func (card *CardSeven)IsSortCardColorSame() bool  {
 	return false
 }
 
+// 五张  计算相同牌面最多张 和 相同牌面第二多的张
 func (card *Card) SameCardMaxLen() (Max int, Second int)  {
 	for _,svalue := range FaceSortBase {
 		n := strings.Count(card.SortCardFace,string(svalue))
 		if n > 0 {
-			//fmt.Println(n, svalue)
 			if Max < n {
 				Max,Second = n,Max
 				card.MaxCardFace, card.SecondCardFace = svalue, card.MaxCardFace
@@ -142,37 +143,41 @@ func (card *Card) SameCardMaxLen() (Max int, Second int)  {
 }
 
 
+// 给各手牌评等级
 func (card *Card)CheckCardLevel()  {
+	// 排序牌面
 	sortCardFace := card.SortCardFace
+	// 判断是否为顺子
 	containsSortCardFace := strings.Contains(FaceSortBase, sortCardFace) || sortCardFace == FaceSortBaseNew
+	// 判断是否为同花
 	sameColor := card.IsSortCardColorSame()
+	// 计算相同牌面最多张 和 相同牌面第二多的张
 	Max, Second := card.SameCardMaxLen()
 	if containsSortCardFace && strings.Contains(sortCardFace, "A") && sameColor { // 皇家同花顺
-		card.Level = LevelFirst
+		card.Level = LevelRoyalFlush
 	} else if containsSortCardFace && sameColor { // 同花顺
-		card.Level = LevelSecond
+		card.Level = LevelStragStraightFlush
 	} else if Max == 4 { // 四条
-		card.Level = LevelThird
+		card.Level = LevelFourOfKind
 	} else if Max == 3 && Second == 2 { // 三带二
-		card.Level = LevelFourth
+		card.Level = LevelFullHouse
 	} else if sameColor { // 同花
-		card.Level = LevelFifth
+		card.Level = LevelFlush
 	} else if containsSortCardFace { // 顺子
-		card.Level = LevelSixth
+		card.Level = LevelStraight
 	} else if Max == 3 { //三条
-		card.Level = LevelSeventh
+		card.Level = LevelThreeOfKind
 	} else if Max == 2 && Second == 2 { // 两对
-		card.Level = LevelEighth
+		card.Level = LevelTwoPairs
 	} else if  Max == 2 { //一对
-		card.Level = LevelNinth
+		card.Level = LevelOnePair
 	} else if Max == 1 { // 单张最大
-		card.Level = LevelTenth
+		card.Level = LevelOvercard
 	}
-
 }
 
 
-
+// 去除相同牌面   相同牌面只留一张
 func SplitSameCard(sortCardFace string) string  {
 	for i:=0; i < len(sortCardFace) -1; i++ {
 		if sortCardFace[i] == sortCardFace[i+1] {
@@ -184,20 +189,15 @@ func SplitSameCard(sortCardFace string) string  {
 }
 
 func (card *CardSeven)CheckCardLevel()  {
+	//判断是否为同一颜色  并修改排序后的牌面
 	sameColor := card.IsSortCardColorSame()
+	// 排序牌面
 	sortCardFace := card.SortCardFace
 	containsSortCardFace := false
+	// 去除相同牌面   相同牌面只留一张
 	sortCardFace = SplitSameCard(sortCardFace)
-	/*if card.CurrentCard == "JdTd6d4dAdTs3d" {
-		fmt.Println("JdTd6d4dAdTs3d", "aaaaa", card,containsSortCardFace,sortCardFace,)
-	}*/
+	// 判断是否为顺子
 	for i:=0; i< len(sortCardFace) - 4; i++ {
-		/*if card.CurrentCard == "JdTd6d4dAdTs3d" {
-			fmt.Println("JdTd6d4dAdTs3d", card,containsSortCardFace,sortCardFace,sortCardFace[i:i+5],i)
-		}
-		if card.CurrentCard == "JdTd6d4dAdTs3d" {
-			fmt.Println("JdTd6d4dAdTs3d", card,containsSortCardFace,sortCardFace,sortCardFace[i:i+5],i)
-		}*/
 		if strings.Index(FaceSortBase, sortCardFace[i:i+5]) != -1{
 			card.SortCardFace = sortCardFace[i:i+5]
 			containsSortCardFace = true
@@ -213,6 +213,7 @@ func (card *CardSeven)CheckCardLevel()  {
 			}
 		}
 	}
+	// 计算相同牌面最多张 和 相同牌面第二多的张
 	Max, Second := card.SameCardMaxLen()
 	/*if card.CurrentCard == "JdTd6d4dAdTs3d" {
 		fmt.Println("JdTd6d4dAdTs3d", card,containsSortCardFace,sortCardFace)
@@ -221,10 +222,11 @@ func (card *CardSeven)CheckCardLevel()  {
 		fmt.Println("Kc9cJdTd6d4dAd", card,containsSortCardFace,sortCardFace)
 	}*/
 	if containsSortCardFace && strings.Contains(card.SortCardFace, "A") && sameColor { // 皇家同花顺
-		card.Level = LevelFirst
+		card.Level = LevelRoyalFlush
 	} else if containsSortCardFace && sameColor { // 同花顺
-		card.Level = LevelSecond
+		card.Level = LevelStragStraightFlush
 	} else if Max == 4 { // 四条
+		// 将排序后的牌面只保留基本长度张数
 		maxIndex := strings.Index(card.SortCardFace, string(card.MaxCardFace))
 		if card.SortCardFace[0:1] == string(card.MaxCardFace) {
 			card.SortCardFace = card.SortCardFace[maxIndex:maxIndex+5]
@@ -232,27 +234,30 @@ func (card *CardSeven)CheckCardLevel()  {
 			card.SortCardFace = card.SortCardFace[maxIndex:maxIndex+4] + card.SortCardFace[0:1]
 			card.SecondCardFace =[]rune(card.SortCardFace[0:1])[0]
 		}
-		card.Level = LevelThird
+		card.Level = LevelFourOfKind
 	} else if Max == 3 && (Second == 2 || Second == 3){ // 三带二
+		// 将排序后的牌面只保留基本长度张数
 		maxIndex := strings.Index(card.SortCardFace, string(card.MaxCardFace))
 		secondIndex := strings.Index(card.SortCardFace, string(card.SecondCardFace))
 		card.SortCardFace = card.SortCardFace[maxIndex:maxIndex+3] + card.SortCardFace[secondIndex:secondIndex+2]
-		card.Level = LevelFourth
+		card.Level = LevelFullHouse
 	} else if sameColor { // 同花
 		card.SortCardFace = card.SortCardFace[0:BaseCardLengh]
-		card.Level = LevelFifth
+		card.Level = LevelFlush
 	} else if containsSortCardFace { // 顺子
 		card.SortCardFace = card.SortCardFace[0:BaseCardLengh]
-		card.Level = LevelSixth
+		card.Level = LevelStraight
 	} else if Max == 3 { //三条
+		// 将排序后的牌面只保留基本长度张数
 		maxIndex := strings.Index(card.SortCardFace, string(card.MaxCardFace))
 		if maxIndex == 0 || maxIndex == 1{
 			card.SortCardFace = card.SortCardFace[0:BaseCardLengh]
 		} else {
 			card.SortCardFace = card.SortCardFace[0:2] + card.SortCardFace[maxIndex:maxIndex+3]
 		}
-		card.Level = LevelSeventh
+		card.Level = LevelThreeOfKind
 	} else if Max == 2 && Second == 2 { // 两对
+		// 将排序后的牌面只保留基本长度张数
 		maxIndex := strings.Index(card.SortCardFace, string(card.MaxCardFace))
 		secondIndex := strings.Index(card.SortCardFace, string(card.SecondCardFace))
 		sortCardBase := card.SortCardFace[maxIndex:maxIndex+2] + card.SortCardFace[secondIndex:secondIndex+2]
@@ -260,17 +265,19 @@ func (card *CardSeven)CheckCardLevel()  {
 		sortCardFace = strings.Replace(sortCardFace, string(card.SecondCardFace), "", -1)
 		card.SortCardFace = sortCardBase + sortCardFace[0:1]
 		//fmt.Println(maxIndex,secondIndex,sortCardBase,sortCardFace,card)
-		card.Level = LevelEighth
+		card.Level = LevelTwoPairs
 	} else if  Max == 2 { //一对
+		// 将排序后的牌面只保留基本长度张数
 		maxIndex := strings.Index(card.SortCardFace, string(card.MaxCardFace))
 		//fmt.Println(card.SortCardFace, card.MaxCardFace, maxIndex)
 		sortCardBase := card.SortCardFace[maxIndex:maxIndex+2]
 		sortCardFace := strings.Replace(card.SortCardFace, string(card.MaxCardFace), "", -1)
 		card.SortCardFace = sortCardBase + sortCardFace[0:3]
-		card.Level = LevelNinth
+		card.Level = LevelOnePair
 	} else if Max == 1 { // 单张最大
+		// 将排序后的牌面只保留基本长度张数
 		card.SortCardFace = card.SortCardFace[0:5]
-		card.Level = LevelTenth
+		card.Level = LevelOvercard
 	}
 	/*if card.CurrentCard == "JdTd6d4dAdTs3d" {
 		fmt.Println("JdTd6d4dAdTs3d", card,)
@@ -309,22 +316,22 @@ func (card *CardFiveGhost) CheckCardLevel()  {
 		}*/
 
 		if containsSortCardFace && strings.Contains(sortCardFace, "A") && sameColor { // 皇家同花顺
-			card.Level = LevelFirst
+			card.Level = LevelRoyalFlush
 		} else if containsSortCardFace && sameColor { // 同花顺
-			card.Level = LevelSecond
+			card.Level = LevelStragStraightFlush
 		} else if Max == 3 { // 四条
-			card.Level = LevelThird
+			card.Level = LevelFourOfKind
 		} else if Max == 2 && Second == 2 { // 三带二
-			card.Level = LevelFourth
+			card.Level = LevelFullHouse
 		} else if sameColor { // 同花
-			card.Level = LevelFifth
+			card.Level = LevelFlush
 		} else if containsSortCardFace { // 顺子
-			card.Level = LevelSixth
+			card.Level = LevelStraight
 		} else if Max == 2 { //三条
-			card.Level = LevelSeventh
+			card.Level = LevelThreeOfKind
 		} else if  Max == 1 { //一对
 			card.SortCardFace = card.SortCardFace[0:1] + card.SortCardFace[0:1] + card.SortCardFace[1:4]
-			card.Level = LevelNinth
+			card.Level = LevelOnePair
 		}
 		/*if card.CurrentCard == "2c3hXn5s5d" {
 			fmt.Println("2c3hXn5s5d", card)
@@ -427,23 +434,23 @@ func (card *CardSevenGhost) CheckCardLevel()  {
 			}
 		}*/
 		if containsSortCardFace && strings.Contains(card.SortCardFace, "A") && sameColor { // 皇家同花顺
-			card.Level = LevelFirst
+			card.Level = LevelRoyalFlush
 		} else if containsSortCardFace && sameColor { // 同花顺
-			card.Level = LevelSecond
+			card.Level = LevelStragStraightFlush
 		} else if Max == 3 { // 四条
-			card.Level = LevelThird
+			card.Level = LevelFourOfKind
 		} else if Max == 2 && Second == 2 { // 三带二
 			maxIndex := strings.Index(card.SortCardFace, string(card.MaxCardFace))
 			secondIndex := strings.Index(card.SortCardFace, string(card.SecondCardFace))
 			//fmt.Println("card.SortCardFace 三带二", card.SortCardFace,card.CurrentCard)
 			card.SortCardFace = card.SortCardFace[maxIndex:maxIndex+2] + card.SortCardFace[secondIndex:secondIndex+2] + card.SortCardFace[len(card.SortCardFace)-1:]
 			//fmt.Println("card.SortCardFace 三带二 2 ", card.SortCardFace,card.CurrentCard)
-			card.Level = LevelFourth
+			card.Level = LevelFullHouse
 		} else if sameColor { // 同花
 			card.SortCardFace = "A" + card.SortCardFace[0:BaseCardLengh-1]
-			card.Level = LevelFifth
+			card.Level = LevelFlush
 		} else if containsSortCardFace { // 顺子
-			card.Level = LevelSixth
+			card.Level = LevelStraight
 		} else if Max == 2 { //三条
 			maxIndex := strings.Index(card.SortCardFace, string(card.MaxCardFace))
 			if maxIndex == 0 || maxIndex == 1{
@@ -451,7 +458,7 @@ func (card *CardSevenGhost) CheckCardLevel()  {
 			} else {
 				card.SortCardFace = card.SortCardFace[0:2] + card.SortCardFace[maxIndex:maxIndex+2] +  card.SortCardFace[len(card.SortCardFace)-1:]
 			}
-			card.Level = LevelSeventh
+			card.Level = LevelThreeOfKind
 	/*	} else if Max == 2 && Second == 2 { // 两对
 			maxIndex := strings.Index(card.SortCardFace, string(card.MaxCardFace))
 			secondIndex := strings.Index(card.SortCardFace, string(card.SecondCardFace))
@@ -460,14 +467,14 @@ func (card *CardSevenGhost) CheckCardLevel()  {
 			sortCardFace = strings.Replace(sortCardFace, string(card.SecondCardFace), "", -1)
 			card.SortCardFace = sortCardBase + sortCardFace[0:1]
 			//fmt.Println(maxIndex,secondIndex,sortCardBase,sortCardFace,card)
-			card.Level = LevelEighth*/
+			card.LevelRoyalFlush = LevelTwoPairs*/
 		} else if  Max == 1 { //一对
 			maxIndex := strings.Index(card.SortCardFace, string(card.MaxCardFace))
 			//fmt.Println(card.SortCardFace, card.MaxCardFace, maxIndex)
 			sortCardBase := card.SortCardFace[maxIndex:maxIndex+1]
 			sortCardFace := strings.Replace(card.SortCardFace, string(card.MaxCardFace), "", -1)
 			card.SortCardFace = sortCardBase +sortCardBase + sortCardFace[0:3]
-			card.Level = LevelNinth
+			card.Level = LevelOnePair
 		}
 		/*if card.CurrentCard == "XnAd5s2h3d9hQs" {
 			fmt.Println("XnAd5s2h3d9hQs", card,)
@@ -490,7 +497,7 @@ func CompareCard(cardOne *Card, cardTwo *Card) (win int) {
 	cardOneSortFace := []rune(cardOne.SortCardFace)
 	cardTwoSortFace := []rune(cardTwo.SortCardFace)
 	switch cardOne.Level {
-	case LevelSecond, LevelSixth:  // 同花顺,顺子   比较第一张
+	case LevelStragStraightFlush, LevelStraight: // 同花顺,顺子   比较第一张
 		if cardOne.SortCardFace == FaceSortBaseNew || cardTwo.SortCardFace == FaceSortBaseNew {
 			if cardOne.SortCardFace == FaceSortBaseNew &&  cardTwo.SortCardFace != FaceSortBaseNew {
 				return ResultSecond
@@ -508,7 +515,7 @@ func CompareCard(cardOne *Card, cardTwo *Card) (win int) {
 		} else {
 			return ResultDogFall
 		}
-	case LevelThird, LevelFourth,LevelSeventh,LevelEighth:  //三条，两对 四条、三带二  比较同牌面张和单张
+	case LevelFourOfKind, LevelFullHouse, LevelThreeOfKind, LevelTwoPairs: //三条，两对 四条、三带二  比较同牌面张和单张
 		if FaceSortBaseMap[cardOne.MaxCardFace] < FaceSortBaseMap[cardTwo.MaxCardFace] {
 			return ResultFirst
 		} else if FaceSortBaseMap[cardOne.MaxCardFace] > FaceSortBaseMap[cardTwo.MaxCardFace] {
@@ -537,14 +544,14 @@ func CompareCard(cardOne *Card, cardTwo *Card) (win int) {
 				return CompareAllCardFace([]rune(sortCardFace),[]rune(sortCardFaceTwo))
 			}
 		}
-	case LevelTenth,LevelFifth:  // 单张最大，同花  比较所有牌面大小
+	case LevelOvercard, LevelFlush: // 单张最大，同花  比较所有牌面大小
 		if len(cardOneSortFace) > len(cardTwoSortFace) {
 			cardTwoSortFace = cardTwoSortFace[0:len(cardOneSortFace)]
 		} else if len(cardOneSortFace) < len(cardTwoSortFace){
 			cardOneSortFace = cardOneSortFace[0:len(cardTwoSortFace)]
 		}
 		return CompareAllCardFace(cardOneSortFace, cardTwoSortFace)
-	case LevelNinth:  // 一对
+	case LevelOnePair: // 一对
 		if FaceSortBaseMap[cardOne.MaxCardFace] < FaceSortBaseMap[cardTwo.MaxCardFace] {
 			return ResultFirst
 		} else if FaceSortBaseMap[cardOne.MaxCardFace] > FaceSortBaseMap[cardTwo.MaxCardFace] {

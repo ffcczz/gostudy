@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcef5519-7ce7-43f8-917c-4644c83ab676" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/texas/five_cards_with_ghost.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/texas/five_cards_with_ghost.result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/texas/seven_cards_with_ghost.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/texas/seven_cards_with_ghost.result.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/texas/texas.go" beforeDir="false" afterPath="$PROJECT_DIR$/texas/texas.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/texas/texas_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/texas/texas_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,29 +75,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="36" />
+          <entry key="go" value="38" />
           <entry key="json" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="35" />
+          <entry key="Go" value="37" />
           <entry key="JSON" value="8" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="12" />
-          <entry key="go" value="12652" />
+          <entry key="dummy" value="128" />
+          <entry key="go" value="13256" />
           <entry key="json" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="12652" />
+          <entry key="Go" value="13256" />
           <entry key="JSON" value="2" />
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="PLAIN_TEXT" value="128" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -118,16 +112,31 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/texas/texas.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="224" column="37" lean-forward="true" selection-start-line="224" selection-start-column="37" selection-end-line="224" selection-end-column="37" />
+            <state relative-caret-position="1397">
+              <caret line="277" column="27" selection-start-line="277" selection-start-column="27" selection-end-line="277" selection-end-column="27" />
               <folding>
+                <element signature="e#14#35#0" expanded="true" />
                 <element signature="n#!!block;n#SortCurrentCard#0" />
-                <element signature="n#!!block;n#IsSortCardColorSame#0" />
-                <element signature="n#!!block;n#IsSortCardColorSame#1" />
-                <element signature="n#!!block;n#CheckCardLevel#0" />
                 <element signature="n#!!block;n#CheckCardLevel#2" />
-                <element signature="n#!!block;n#CheckCardLevel#3" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="93" column="12" lean-forward="true" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings_amd64.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -144,7 +153,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/texas/Compare.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="73">
               <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
             </state>
           </provider>
@@ -153,11 +162,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/texas/texas_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="146" column="22" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="34" />
+            <state relative-caret-position="653">
+              <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
               <folding>
+                <element signature="n#!!block;n#TestCompareFiveCard#0" />
                 <element signature="n#!!block;n#TestCompareSevenCard#0" />
                 <element signature="n#!!block;n#TestCompareFiveCardWithGhost#0" />
+                <element signature="n#!!block;n#TestCompareSevenCardWithGhost#0" />
               </folding>
             </state>
           </provider>
@@ -201,9 +212,11 @@
       <find>5c2d5dXnKd7d6d</find>
       <find>AhQdTs3sXn4d2h</find>
       <find>AhQdTs4d3s2hXn</find>
-      <find>XnAd5s2h3d9hQs</find>
       <find>6s6c6h6dKc2sTh</find>
       <find>TcTsAhTdTh9cJd</find>
+      <find>Jd9dTdAdQd3h8d</find>
+      <find>Kc9cJdTd6d4dAd</find>
+      <find>XnAd5s2h3d9hQs</find>
     </findStrings>
     <replaceStrings>
       <replace>ResultFirst</replace>
@@ -416,7 +429,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Go Test.TestCompareSevenCardWithGhost in gostudy/texas">
-    <configuration name="TestCompare in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCompareFiveCard in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="konggostudy" />
       <working_directory value="$PROJECT_DIR$/texas" />
       <framework value="gotest" />
@@ -424,7 +437,7 @@
       <package value="gostudy/texas" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestCompare$" />
+      <pattern value="^TestCompareFiveCard$" />
       <method v="2" />
     </configuration>
     <configuration name="TestCompareFiveCardWithGhost in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -471,51 +484,51 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Test.TestCompare in gostudy/texas" />
       <item itemvalue="Go Test.TestCompareSevenCard in gostudy/texas" />
       <item itemvalue="Go Test.TestCompareFiveCardWithGhost in gostudy/texas" />
       <item itemvalue="Go Test.TestCompareSevenCardWithGhost in gostudy/texas" />
       <item itemvalue="Go Test.texas_test.go" />
+      <item itemvalue="Go Test.TestCompareFiveCard in gostudy/texas" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Test.TestCompareSevenCardWithGhost in gostudy/texas" />
-        <item itemvalue="Go Test.TestCompareSevenCard in gostudy/texas" />
-        <item itemvalue="Go Test.texas_test.go" />
         <item itemvalue="Go Test.TestCompareFiveCardWithGhost in gostudy/texas" />
-        <item itemvalue="Go Test.TestCompare in gostudy/texas" />
+        <item itemvalue="Go Test.TestCompareSevenCard in gostudy/texas" />
+        <item itemvalue="Go Test.TestCompareFiveCard in gostudy/texas" />
+        <item itemvalue="Go Test.texas_test.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCompareSevenCard_in_gostudy_texas - 2018.12.31 at 10h 41m 52s.xml">
+    <history-entry file="TestCompareSevenCard_in_gostudy_texas - 2018.12.31 at 11h 27m 15s.xml">
       <configuration name="TestCompareSevenCard in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 10h 41m 58s.xml">
+    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 11h 27m 20s.xml">
       <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 10h 44m 01s.xml">
+    <history-entry file="TestCompareFiveCard_in_gostudy_texas - 2018.12.31 at 11h 28m 18s.xml">
+      <configuration name="TestCompareFiveCard in gostudy/texas" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestCompareSevenCard_in_gostudy_texas - 2018.12.31 at 11h 28m 22s.xml">
+      <configuration name="TestCompareSevenCard in gostudy/texas" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestCompareFiveCardWithGhost_in_gostudy_texas - 2018.12.31 at 11h 28m 26s.xml">
+      <configuration name="TestCompareFiveCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 11h 28m 30s.xml">
       <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 10h 45m 54s.xml">
+    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 11h 28m 37s.xml">
       <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 10h 47m 19s.xml">
+    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 11h 28m 55s.xml">
       <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 10h 51m 02s.xml">
+    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 11h 28m 59s.xml">
       <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 10h 52m 31s.xml">
-      <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 10h 56m 29s.xml">
-      <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 10h 58m 06s.xml">
-      <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 11h 01m 38s.xml">
+    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 11h 29m 02s.xml">
       <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
@@ -530,21 +543,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47928995" visible="true" weight="0.3279483" />
       <window_info id="Structure" order="1" sideWeight="0.52071005" side_tool="true" weight="0.15993538" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2849315" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2849315" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.124087594" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.33835617" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33835617" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -810,13 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="840" column="5" selection-start-line="840" selection-start-column="5" selection-end-line="840" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/encoding/json/decode.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -848,13 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings_amd64.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/texas/five_cards_with_ghost.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -881,35 +879,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/texas/Compare.go">
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings_amd64.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="126">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="93" column="12" lean-forward="true" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/texas/texas_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="146" column="22" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="34" />
+        <state relative-caret-position="653">
+          <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
           <folding>
+            <element signature="n#!!block;n#TestCompareFiveCard#0" />
             <element signature="n#!!block;n#TestCompareSevenCard#0" />
             <element signature="n#!!block;n#TestCompareFiveCardWithGhost#0" />
+            <element signature="n#!!block;n#TestCompareSevenCardWithGhost#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texas/Compare.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/texas/texas.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="224" column="37" lean-forward="true" selection-start-line="224" selection-start-column="37" selection-end-line="224" selection-end-column="37" />
+        <state relative-caret-position="1397">
+          <caret line="277" column="27" selection-start-line="277" selection-start-column="27" selection-end-line="277" selection-end-column="27" />
           <folding>
+            <element signature="e#14#35#0" expanded="true" />
             <element signature="n#!!block;n#SortCurrentCard#0" />
-            <element signature="n#!!block;n#IsSortCardColorSame#0" />
-            <element signature="n#!!block;n#IsSortCardColorSame#1" />
-            <element signature="n#!!block;n#CheckCardLevel#0" />
             <element signature="n#!!block;n#CheckCardLevel#2" />
-            <element signature="n#!!block;n#CheckCardLevel#3" />
           </folding>
         </state>
       </provider>
