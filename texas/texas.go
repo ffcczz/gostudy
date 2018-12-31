@@ -42,6 +42,10 @@ var FaceSortBaseMap = map[rune]rune{
 	'X':14,
 }
 
+type BaseCard interface {
+	SortCurrentCard()
+	CheckCardLevel()
+}
 
 
 type Card struct {    //五张   基础

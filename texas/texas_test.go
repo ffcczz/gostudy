@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
+	"runtime"
 	"testing"
 	"time"
 )
+
+var cores = runtime.NumCPU()
 
 func TestSort(t *testing.T)  {
 	card := &Card{
@@ -39,8 +42,6 @@ func TestCard_SameCardMaxLen(t *testing.T) {
 }
 
 func TestCompareFiveCard(t *testing.T) {
-	//currentPath,_ := filepath.Abs(filepath.Dir(os.Args[0]))
-	//fmt.Println(currentPath)
 	var matches FiveCards
 	var results FiveCards
 	ReadFile("match.json", &matches)
@@ -66,12 +67,12 @@ func TestCompareFiveCard(t *testing.T) {
 			fmt.Println(i,"result error", matches.Matches[i],results.Matches[i])
 		}
 	}
+	CompareCardWithFile("match.json","result.json", CardSeven{},CardSeven{})
+
 }
 
 func TestCompareSevenCard(t *testing.T) {
-	//currentPath,_ := filepath.Abs(filepath.Dir(os.Args[0]))
-	//fmt.Println(currentPath)
-	var matches FiveCards
+	/*var matches FiveCards
 	var results FiveCards
 	ReadFile("seven_cards.json", &matches)
 	start := time.Now().UTC().Nanosecond()
@@ -80,20 +81,16 @@ func TestCompareSevenCard(t *testing.T) {
 			Card:Card{
 				CurrentCard:matches.Matches[i].Bob,
 			},
-
-
 		}
 		cardAlice := CardSeven{
 			Card:Card{
-			CurrentCard:matches.Matches[i].Alice,
+				CurrentCard:matches.Matches[i].Alice,
 		    },
 		}
 		cardBob.SortCurrentCard()
 		cardBob.CheckCardLevel()
-		//fmt.Println("cardBob",cardBob)
 		cardAlice.SortCurrentCard()
 		cardAlice.CheckCardLevel()
-		//fmt.Println("cardAlice",cardAlice)
 		matches.Matches[i].Result = CompareCard(&cardAlice.Card,&cardBob.Card)
 	}
 	end := time.Now().UTC().Nanosecond()
@@ -105,8 +102,35 @@ func TestCompareSevenCard(t *testing.T) {
 			count += 1
 			fmt.Println(i,"result error", matches.Matches[i],results.Matches[i], count)
 		}
+	}*/
+
+	CompareCardWithFile("seven_cards.json","seven_cards.result.json", CardSeven{},CardSeven{})
+}
+
+func CompareCardWithFile(inputFilePath, resultFilePath string,cardBob,cardAlice CardSeven)  {
+	var matches FiveCards
+	var results FiveCards
+	ReadFile(inputFilePath, &matches)
+	start := time.Now().UTC().Nanosecond()
+	for i := 0; i< len(matches.Matches); i++ {
+		cardBob.CurrentCard = matches.Matches[i].Bob
+		cardAlice.CurrentCard = matches.Matches[i].Alice
+		cardBob.SortCurrentCard()
+		cardBob.CheckCardLevel()
+		cardAlice.SortCurrentCard()
+		cardAlice.CheckCardLevel()
+		matches.Matches[i].Result = CompareCard(&cardAlice.Card,&cardBob.Card)
 	}
-	//fmt.Println(matches)
+	end := time.Now().UTC().Nanosecond()
+	fmt.Println(end-start)
+	ReadFile(resultFilePath, &results)
+	count := 0
+	for i:=0; i < len(matches.Matches); i++ {
+		if matches.Matches[i].Result != results.Matches[i].Result {
+			count += 1
+			fmt.Println(i,"result error", matches.Matches[i],results.Matches[i], count)
+		}
+	}
 }
 
 func TestCompareFiveCardWithGhost(t *testing.T)  {
@@ -143,10 +167,9 @@ func TestCompareFiveCardWithGhost(t *testing.T)  {
 	}
 }
 
-
-func TestCompareSevenCardWithGhost(t *testing.T)  {
-	var matches FiveCards
+func TestCompareSevenCardWithGhostOneCore(t *testing.T)  {
 	var results FiveCards
+	var matches FiveCards
 	ReadFile("seven_cards_with_ghost.json", &matches)
 	start := time.Now().UTC().Nanosecond()
 	for i := 0; i< len(matches.Matches); i++ {
@@ -180,4 +203,64 @@ func TestCompareSevenCardWithGhost(t *testing.T)  {
 			fmt.Println(i,"result error", matches.Matches[i],results.Matches[i], count)
 		}
 	}
+}
+
+func TestCompareSevenCardWithGhost(t *testing.T)  {
+	var results FiveCards
+	ReadFile("seven_cards_with_ghost.json", &matches)
+	start := time.Now().UTC().Nanosecond()
+
+	/*var wg sync.WaitGroup
+	for i:=0;i< cores; i++ {
+		wg.Add(1)
+		go CompareCardWithFileSevenCardWithGhost(i,&wg)
+	}
+	wg.Wait()*/
+	var chans = []chan int{}
+	for i:=0;i < cores;i++ {
+		c := make(chan int)
+		chans = append(chans, c)
+		go CompareCardWithFileSevenCardWithGhost(i,c)
+	}
+	for _,c := range chans {
+		<- c
+	}
+	end := time.Now().UTC().Nanosecond()
+	fmt.Println(end-start)
+	ReadFile("seven_cards_with_ghost.result.json", &results)
+	count := 0
+	for i:=0; i < len(matches.Matches); i++ {
+		if matches.Matches[i].Result != results.Matches[i].Result {
+			count += 1
+			fmt.Println(i,"result error", matches.Matches[i],results.Matches[i], count)
+		}
+	}
+}
+
+//func CompareCardWithFileSevenCardWithGhost(core int,wg *sync.WaitGroup)  {
+func CompareCardWithFileSevenCardWithGhost(core int,c chan int)  {
+	for i := 0; i< len(matches.Matches)/cores; i++ {
+		cardBob := CardSevenGhost{
+			CardSeven:CardSeven{
+				Card:Card{
+					CurrentCard:matches.Matches[i*cores+core].Bob,
+				},
+			},
+		}
+		cardAlice := CardSevenGhost{
+			CardSeven:CardSeven{
+				Card:Card{
+					CurrentCard:matches.Matches[i*cores+core].Alice,
+				},
+			},
+		}
+		cardBob.SortCurrentCard()
+		cardBob.CheckCardLevel()
+		cardAlice.SortCurrentCard()
+		cardAlice.CheckCardLevel()
+		matches.Matches[i*cores+core].Result = CompareCard(&cardAlice.Card,&cardBob.Card)
+	}
+	//wg.Done()
+	//fmt.Println(len(matches.Matches)/cores)
+	c <- 1
 }
