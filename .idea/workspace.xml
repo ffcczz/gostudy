@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcef5519-7ce7-43f8-917c-4644c83ab676" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go_base/select.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/go_base/select_test.go" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,77 +114,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="texas.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/texas/texas.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5385">
-              <caret line="423" column="5" selection-start-line="423" selection-start-column="5" selection-end-line="423" selection-end-column="5" />
+            <state relative-caret-position="0">
+              <caret line="423" column="5" lean-forward="false" selection-start-line="423" selection-start-column="5" selection-end-line="423" selection-end-column="5" />
               <folding>
                 <element signature="e#14#35#0" expanded="true" />
-                <element signature="n#!!block;n#SortCurrentCard#0" />
-                <element signature="n#!!block;n#IsSortCardColorSame#1" />
-                <element signature="n#!!block;n#SameCardMaxLen#0" />
-                <element signature="n#!!block;n#SplitSameCard#0" />
+                <element signature="n#!!block;n#SortCurrentCard#0" expanded="false" />
+                <element signature="n#!!block;n#IsSortCardColorSame#1" expanded="false" />
+                <element signature="n#!!block;n#SameCardMaxLen#0" expanded="false" />
+                <element signature="n#!!block;n#SplitSameCard#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings_amd64.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="seven_cards.result.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/texas/seven_cards.result.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146310">
-              <caret line="9754" column="62" selection-start-line="9754" selection-start-column="62" selection-end-line="9754" selection-end-column="62" />
+            <state relative-caret-position="175572">
+              <caret line="9754" column="62" lean-forward="false" selection-start-line="9754" selection-start-column="62" selection-end-line="9754" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Compare.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/texas/Compare.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="252">
+              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="texas_test.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/texas/texas_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="222" column="36" selection-start-line="222" selection-start-column="36" selection-end-line="222" selection-end-column="36" />
+            <state relative-caret-position="657">
+              <caret line="224" column="28" lean-forward="true" selection-start-line="224" selection-start-column="28" selection-end-line="224" selection-end-column="28" />
               <folding>
-                <element signature="n#!!block;n#TestCompareSevenCard#0" />
-                <element signature="n#!!block;n#CompareCardWithFile#0" />
-                <element signature="n#!!block;n#TestCompareFiveCardWithGhost#0" />
+                <element signature="n#!!block;n#TestCompareSevenCard#0" expanded="false" />
+                <element signature="n#!!block;n#CompareCardWithFile#0" expanded="false" />
+                <element signature="n#!!block;n#TestCompareFiveCardWithGhost#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/texas/seven_cards.json">
+      <file leaf-file-name="select.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/go_base/select.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="59" selection-start-column="45" selection-end-column="59" />
+            <state relative-caret-position="270">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#17#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select_test.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go_base/select_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="e#17#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testing.go" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/go/src/testing/testing.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="826" column="0" lean-forward="false" selection-start-line="826" selection-start-column="0" selection-end-line="826" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -227,7 +239,7 @@
       <replace>ResultDogFall</replace>
     </replaceStrings>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go@1.10/1.10.4/libexec" />
+  <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -262,6 +274,8 @@
         <option value="$PROJECT_DIR$/texas/seven_cards_with_ghost.result.json" />
         <option value="$PROJECT_DIR$/texas/texas.go" />
         <option value="$PROJECT_DIR$/texas/texas_test.go" />
+        <option value="$PROJECT_DIR$/go_base/select.go" />
+        <option value="$PROJECT_DIR$/go_base/select_test.go" />
       </list>
     </option>
   </component>
@@ -272,18 +286,28 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="777" />
+    <option name="x" value="456" />
+    <option name="y" value="55" />
+    <option name="width" value="1398" />
+    <option name="height" value="984" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
       <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,32 +318,7 @@
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="gostudy" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gostudy" type="462c0819:PsiDirectoryNode" />
-              <item name="design_pattern" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gostudy" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gostudy" type="462c0819:PsiDirectoryNode" />
-              <item name="program" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gostudy" type="462c0819:PsiDirectoryNode" />
-              <item name="struct" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gostudy" type="462c0819:PsiDirectoryNode" />
-              <item name="texas" type="462c0819:PsiDirectoryNode" />
+              <item name="go_base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
@@ -328,69 +327,25 @@
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
             </path>
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="encoding" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="encoding" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="ioutil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="path" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="runtime" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="strings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.10.4" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="testing" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -398,6 +353,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,19 +387,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestCompareSevenCardWithGhost in gostudy/texas">
-    <configuration name="TestCompareFiveCard in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="konggostudy" />
-      <working_directory value="$PROJECT_DIR$/texas" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="gostudy/texas" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestCompareFiveCard$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestCompareFiveCardWithGhost in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestTask_TaskTest in select_test.go">
+    <configuration name="TestCompareFiveCardWithGhost in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
       <module name="konggostudy" />
       <working_directory value="$PROJECT_DIR$/texas" />
       <framework value="gotest" />
@@ -452,9 +397,8 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <pattern value="^TestCompareFiveCardWithGhost$" />
-      <method v="2" />
     </configuration>
-    <configuration name="TestCompareSevenCard in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCompareSevenCard in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
       <module name="konggostudy" />
       <working_directory value="$PROJECT_DIR$/texas" />
       <framework value="gotest" />
@@ -463,9 +407,8 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <pattern value="^TestCompareSevenCard$" />
-      <method v="2" />
     </configuration>
-    <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
       <module name="konggostudy" />
       <working_directory value="$PROJECT_DIR$/texas" />
       <framework value="gotest" />
@@ -474,9 +417,8 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <pattern value="^TestCompareSevenCardWithGhost$" />
-      <method v="2" />
     </configuration>
-    <configuration name="TestCompareSevenCardWithGhostOneCore in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCompareSevenCardWithGhostOneCore in gostudy/texas" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
       <module name="konggostudy" />
       <working_directory value="$PROJECT_DIR$/texas" />
       <framework value="gotest" />
@@ -485,55 +427,66 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <pattern value="^TestCompareSevenCardWithGhostOneCore$" />
-      <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Go Test.TestCompareSevenCard in gostudy/texas" />
-      <item itemvalue="Go Test.TestCompareFiveCardWithGhost in gostudy/texas" />
-      <item itemvalue="Go Test.TestCompareSevenCardWithGhost in gostudy/texas" />
-      <item itemvalue="Go Test.TestCompareFiveCard in gostudy/texas" />
-      <item itemvalue="Go Test.TestCompareSevenCardWithGhostOneCore in gostudy/texas" />
+    <configuration name="TestTask_TaskTest in select_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="konggostudy" />
+      <working_directory value="$PROJECT_DIR$/go_base" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="gostudy/go_base" />
+      <pattern value="^TestTask_TaskTest$" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Go Test.TestCompareSevenCard in gostudy/texas" />
+      <item index="1" class="java.lang.String" itemvalue="Go Test.TestCompareFiveCardWithGhost in gostudy/texas" />
+      <item index="2" class="java.lang.String" itemvalue="Go Test.TestCompareSevenCardWithGhost in gostudy/texas" />
+      <item index="3" class="java.lang.String" itemvalue="Go Test.TestCompareSevenCardWithGhostOneCore in gostudy/texas" />
+      <item index="4" class="java.lang.String" itemvalue="Go Test.TestTask_TaskTest in select_test.go" />
     </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="Go Test.TestCompareSevenCardWithGhost in gostudy/texas" />
-        <item itemvalue="Go Test.TestCompareSevenCardWithGhostOneCore in gostudy/texas" />
-        <item itemvalue="Go Test.TestCompareSevenCard in gostudy/texas" />
-        <item itemvalue="Go Test.TestCompareFiveCardWithGhost in gostudy/texas" />
-        <item itemvalue="Go Test.TestCompareFiveCard in gostudy/texas" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Go Test.TestTask_TaskTest in select_test.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Test.TestCompareSevenCardWithGhost in gostudy/texas" />
+        <item index="2" class="java.lang.String" itemvalue="Go Test.TestCompareSevenCardWithGhostOneCore in gostudy/texas" />
+        <item index="3" class="java.lang.String" itemvalue="Go Test.TestCompareSevenCard in gostudy/texas" />
+        <item index="4" class="java.lang.String" itemvalue="Go Test.TestCompareFiveCardWithGhost in gostudy/texas" />
       </list>
     </recent_temporary>
   </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="TestHistory">
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 15h 55m 40s.xml">
-      <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 15h 55m 43s.xml">
-      <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 15h 55m 48s.xml">
-      <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 15h 55m 53s.xml">
-      <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 15h 55m 57s.xml">
-      <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 15h 56m 01s.xml">
-      <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 15h 56m 05s.xml">
-      <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 15h 56m 08s.xml">
-      <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 15h 56m 12s.xml">
       <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
     </history-entry>
     <history-entry file="TestCompareSevenCardWithGhost_in_gostudy_texas - 2018.12.31 at 15h 56m 15s.xml">
       <configuration name="TestCompareSevenCardWithGhost in gostudy/texas" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTask_TaskTest_in_select_test_go - 2019.01.28 at 17h 12m 51s.xml">
+      <configuration name="TestTask_TaskTest in select_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTask_TaskTest_in_select_test_go - 2019.01.28 at 17h 13m 50s.xml">
+      <configuration name="TestTask_TaskTest in select_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTask_TaskTest_in_select_test_go - 2019.01.28 at 17h 14m 44s.xml">
+      <configuration name="TestTask_TaskTest in select_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTask_TaskTest_in_select_test_go - 2019.01.28 at 17h 17m 14s.xml">
+      <configuration name="TestTask_TaskTest in select_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTask_TaskTest_in_select_test_go - 2019.01.28 at 17h 18m 05s.xml">
+      <configuration name="TestTask_TaskTest in select_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTask_TaskTest_in_select_test_go - 2019.01.28 at 17h 21m 24s.xml">
+      <configuration name="TestTask_TaskTest in select_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTask_TaskTest_in_select_test_go - 2019.01.28 at 17h 21m 58s.xml">
+      <configuration name="TestTask_TaskTest in select_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTask_TaskTest_in_select_test_go - 2019.01.28 at 17h 25m 00s.xml">
+      <configuration name="TestTask_TaskTest in select_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -546,28 +499,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="-28" width="1920" height="1108" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47928995" visible="true" weight="0.33279485" />
-      <window_info id="Structure" order="1" sideWeight="0.52071005" side_tool="true" weight="0.15993538" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2849315" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.124087594" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33835617" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33229166" sideWeight="0.47928995" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28486055" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.124087594" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15993538" sideWeight="0.52071005" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33864543" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,111 +589,132 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/sort/sort.go">
+    <entry file="file://$PROJECT_DIR$/texas/texas.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="301" column="21" selection-start-line="301" selection-start-column="21" selection-end-line="301" selection-end-column="21" />
+        <state relative-caret-position="6462">
+          <caret line="423" column="5" lean-forward="false" selection-start-line="423" selection-start-column="5" selection-end-line="423" selection-end-column="5" />
+          <folding>
+            <element signature="e#14#35#0" expanded="true" />
+            <element signature="n#!!block;n#SortCurrentCard#0" expanded="false" />
+            <element signature="n#!!block;n#IsSortCardColorSame#1" expanded="false" />
+            <element signature="n#!!block;n#SameCardMaxLen#0" expanded="false" />
+            <element signature="n#!!block;n#SplitSameCard#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/texas/seven_cards.result.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175572">
+          <caret line="9754" column="62" lean-forward="false" selection-start-line="9754" selection-start-column="62" selection-end-line="9754" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texas/Compare.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texas/seven_cards.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texas/texas_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2286">
+          <caret line="222" column="36" lean-forward="false" selection-start-line="222" selection-start-column="36" selection-end-line="222" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!block;n#TestCompareSevenCard#0" expanded="false" />
+            <element signature="n#!!block;n#CompareCardWithFile#0" expanded="false" />
+            <element signature="n#!!block;n#TestCompareFiveCardWithGhost#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/sort/sort.go" />
     <entry file="file://$PROJECT_DIR$/../gopl.io/ch7/eval/parse.go" />
     <entry file="file://$PROJECT_DIR$/test/struct_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="9" />
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/sort_interface_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/program_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/struct/error.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="8" selection-end-column="15" />
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/program/parse.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <caret line="58" column="30" lean-forward="false" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/os/error.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/os/file.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3765">
-          <caret line="258" column="30" selection-start-line="258" selection-start-column="30" selection-end-line="258" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/os/error.go" />
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/os/file.go" />
     <entry file="file://$PROJECT_DIR$/file/file_operation.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+          <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/os/path.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/mime/multipart/formdata.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="139" column="4" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/os/path.go" />
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/mime/multipart/formdata.go" />
     <entry file="file://$PROJECT_DIR$/design_pattern/strategy.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design_pattern/simple_factory.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design_pattern/decorator_log.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design_pattern/decorator02.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -754,14 +728,14 @@
     <entry file="file://$PROJECT_DIR$/design_pattern/simple_factory_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
-          <caret line="72" column="13" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="22" />
+          <caret line="72" column="13" lean-forward="false" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design_pattern/proxy.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -772,177 +746,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/net/http/request.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="1267" column="18" selection-start-line="1267" selection-start-column="18" selection-end-line="1267" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/time/time.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/net/http/request.go" />
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/time/time.go" />
     <entry file="file://$PROJECT_DIR$/program/calculator.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interface/sort_interface.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strconv/itoa.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strconv/itoa.go" />
     <entry file="file://$PROJECT_DIR$/algorithm/bubble.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/struct/struct_lap.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/path/path.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="180" column="5" selection-start-line="180" selection-start-column="5" selection-end-line="180" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/path/path.go" />
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/io/ioutil/ioutil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/encoding/json/decode.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/io/ioutil/ioutil.go" />
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/encoding/json/decode.go" />
     <entry file="file://$PROJECT_DIR$/texas/match.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="66" lean-forward="true" selection-start-column="66" selection-end-column="66" />
+        <state relative-caret-position="0">
+          <caret line="0" column="66" lean-forward="true" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/texas/result.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/testing/testing.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="823" selection-start-line="823" selection-end-line="823" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/runtime/panic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="501" selection-start-line="501" selection-end-line="501" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/texas/five_cards_with_ghost.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/texas/five_cards_with_ghost.result.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/texas/seven_cards_with_ghost.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/texas/seven_cards_with_ghost.result.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/testing/testing.go" />
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/runtime/panic.go" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.go" />
     <entry file="file://$PROJECT_DIR$/texas/texas.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5385">
-          <caret line="423" column="5" selection-start-line="423" selection-start-column="5" selection-end-line="423" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="423" column="5" lean-forward="false" selection-start-line="423" selection-start-column="5" selection-end-line="423" selection-end-column="5" />
           <folding>
             <element signature="e#14#35#0" expanded="true" />
-            <element signature="n#!!block;n#SortCurrentCard#0" />
-            <element signature="n#!!block;n#IsSortCardColorSame#1" />
-            <element signature="n#!!block;n#SameCardMaxLen#0" />
-            <element signature="n#!!block;n#SplitSameCard#0" />
+            <element signature="n#!!block;n#SortCurrentCard#0" expanded="false" />
+            <element signature="n#!!block;n#IsSortCardColorSame#1" expanded="false" />
+            <element signature="n#!!block;n#SameCardMaxLen#0" expanded="false" />
+            <element signature="n#!!block;n#SplitSameCard#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings_amd64.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings.go" />
+    <entry file="file:///usr/local/Cellar/go@1.10/1.10.4/libexec/src/strings/strings_amd64.go" />
     <entry file="file://$PROJECT_DIR$/texas/seven_cards.result.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146310">
-          <caret line="9754" column="62" selection-start-line="9754" selection-start-column="62" selection-end-line="9754" selection-end-column="62" />
+        <state relative-caret-position="175572">
+          <caret line="9754" column="62" lean-forward="false" selection-start-line="9754" selection-start-column="62" selection-end-line="9754" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/texas/Compare.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="252">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/texas/seven_cards.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="59" selection-start-column="45" selection-end-column="59" />
+        <state relative-caret-position="0">
+          <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/texas/texas_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="222" column="36" selection-start-line="222" selection-start-column="36" selection-end-line="222" selection-end-column="36" />
+        <state relative-caret-position="657">
+          <caret line="224" column="28" lean-forward="true" selection-start-line="224" selection-start-column="28" selection-end-line="224" selection-end-column="28" />
           <folding>
-            <element signature="n#!!block;n#TestCompareSevenCard#0" />
-            <element signature="n#!!block;n#CompareCardWithFile#0" />
-            <element signature="n#!!block;n#TestCompareFiveCardWithGhost#0" />
+            <element signature="n#!!block;n#TestCompareSevenCard#0" expanded="false" />
+            <element signature="n#!!block;n#CompareCardWithFile#0" expanded="false" />
+            <element signature="n#!!block;n#TestCompareFiveCardWithGhost#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="512" column="0" lean-forward="false" selection-start-line="512" selection-start-column="0" selection-end-line="512" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/testing/testing.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="826" column="0" lean-forward="false" selection-start-line="826" selection-start-column="0" selection-end-line="826" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_base/select_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#17#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_base/select.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#17#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
