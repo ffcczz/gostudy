@@ -2,10 +2,9 @@ package test
 
 import (
 	"fmt"
-	"konggostudy/program"
 	"math"
 	"testing"
-	"gopl.io/ch7/eval"
+	"gostudy/program"
 )
 
 func TestEval(t *testing.T)  {
@@ -31,6 +30,7 @@ func TestEval(t *testing.T)  {
 		}
 
 		got := fmt.Sprintf("%.6g", expr.Eval(test.env))
+		fmt.Println(got)
 
 
 	}

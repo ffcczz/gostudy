@@ -2,8 +2,8 @@ package test
 
 import (
 	"fmt"
-	"konggostudy/struct"
 	"testing"
+	"gostudy/struct"
 )
 
 func Test(t *testing.T)  {
