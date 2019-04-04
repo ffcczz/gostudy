@@ -9,7 +9,8 @@ import (
 )
 
 func main()  {
-	f, err := os.Open("/Users/konggan/workspace/chain/eos/contracts/hello/hello.wasm")
+	//f, err := os.Open("/Users/konggan/workspace/go/src/gostudy/wasm/test.wasm")
+	f, err := os.Open("/Users/konggan/workspace/go/src/gostudy/wasm/cmain.wasm")
 	//f, err := file.Open("wasm_first.wasm")
 	if err != nil {
 		log.Fatal("Open file", err)
